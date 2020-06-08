@@ -1,0 +1,77 @@
+h1 {
+ margin: 0;   
+}
+
+body {
+  background-color: black;
+}
+
+.card-container {
+    display:flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    color: black;
+    text-align: center;
+    
+    margin-top: 20px;
+    width: 400px;
+    height: 600px;
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    background: #d4d4d4;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 600px;
+    backface-visibility: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.pic{
+  margin: 10%; 
+  width:320px;
+  height:530px;
+}
+
+.pic img{
+  width:320px;
+  height:520px;
+}
+
+.bio {
+  margin-top: 45%;
+  margin-left:10%;
+  margin-right:10%;
+  text-align: center;
+  line-height: 2em;
+  font-size: large;
+}
+
+.tinydiv{
+  position:absolute;
+  bottom:30px;
+  right: 20px;
+  width: 100px;
+  height:20px;
+}
+
+.tiny {
+  font-size: 7px;
+  color:black;
+  line-height: normal;
+}
+.back {
+    transform: rotateY(180deg);
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
